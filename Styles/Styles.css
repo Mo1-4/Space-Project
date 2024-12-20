@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    animation: rgb 3s linear infinite;
+}
+
+
+@keyframes rgb {
+    0% { color: violet; }
+    50% { color: chocolate; }
+    100% { color: violet; }
+}
+
+.landing nav{
+    background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+    padding: 15px;
+}
+
+.landing nav .landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.landing nav .nav-bar ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 40px;
+}
+
+.landing nav .nav-bar ul li{
+    transition: 0.2s linear;
+}
+
+.landing nav .nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.landing nav .nav-bar ul li:hover{
+    transform: scale(1.2,1.2);
+}
+
+.landing nav .landing-nav .serach-bar{
+    margin-left: 10px;
+}
+
+.landing nav .landing-nav .serach-bar input{
+    border: none;
+    height: 45px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.landing nav .landing-nav .hidden-toggle{
+    color: white;
+    font-size: 2em;
+    border: 1px solid snow;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px snow;
+    padding: 5px;
+    background-color: rgb(113, 22, 113);
+}
+
+.landing .hidden{
+    height: 0;
+    overflow: hidden;
+}
+
+.landing .active{
+    height: 140px;
+}
+
+.landing .hidden-items{
+    background:rgb(85, 54, 134);
+    transition: 0.5s;
+}
+
+.landing .hidden-items ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.landing .hidden-items ul li{
+    padding-top: 6px;
+}
+
+.landing .hidden-items ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    animation: opaicte 1s linear;
+}
+
+
+.main-landing{
+    background-image: url(../Images/5.jpg);
+    background-size: cover;
+}
+
+.main-landing .over-landing,
+.educational-landing .container,
+footer .footer-container{
+    background-color: rgba(0, 0, 0, 0.504);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+    padding: 20px;
+}
+
+.main-landing .over-landing h3{
+    font-size: 40px;
+}
+
+.main-landing .over-landing h1{
+    font-weight: bold;
+    color: rgb(111, 178, 181);
+    text-align: center;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+
+.main-landing .email-form form input:nth-child(1) {
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    border: none;
+}
+
+.main-landing .email-form form input:nth-child(1):focus{
+    background-color: rgb(233, 238, 239);
+    outline: none;
+}
+
+.main-landing .email-form{
+    animation: opaicte 1s linear;
+}
+
+.main-landing .over-landing h1,
+.main-landing .over-landing h3,
+.main-landing .over-landing p{
+    animation: opaicte 1s linear;
+}
+
+@keyframes opaicte {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-landing .over-landing form input:nth-child(2){
+    width: 130px;
+    height: 50px;
+    background-color: rgb(229, 192, 122);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main-landing .over-landing form input:nth-child(2):hover{
+    background-color:  rgb(204, 196, 181);
+}
+
+
+.about{
+    background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    padding: 30px 25px;
+}
+
+.about .about-text{
+    text-align: center;
+    padding-inline: 100px;
+    margin-bottom: 100px;
+}
+
+.about .about-text *{
+    margin-bottom: 15px;
+}
+
+.about .about-text h1{
+    font-size: 55px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.about .about-text h1::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 80px;
+    background-color: orange;
+    bottom: -20px;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%);
+}
+
+.about .about-welcome{
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.about .about-welcome .image-parent img{
+    width: 650px;
+    height: 100%;
+}
+
+.about .about-welcome .welcome-text{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.about .about-welcome .welcome-text h1{
+    font-size: 90px;
+}
+
+.about .about-welcome .welcome-text p:nth-child(1){
+    font-size: 22px;
+}
+
+.about .about-welcome .welcome-text p:nth-child(3){
+    font-weight: 300;
+    font-size: 25px;
+}
+
+@media (max-width: 1210px){
+    .about .about-text{
+        padding-inline: 0;
+    }
+
+    .about .about-welcome{
+        flex-direction: column;
+    }
+
+    .about .about-welcome .welcome-text{
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .about .about-welcome .image-parent img{
+        width: 100%;
+        height: 550px;
+    }
+}
+
+@media (max-width: 802px){
+    .main-landing .over-landing{
+        align-items: center;
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 610px){
+    .about .about-welcome .image-parent img{
+        height: 470px;
+    }
+}
+
+@media (max-width: 525px){
+    .main-landing .over-landing form input:nth-child(1){
+        width: 300px;
+    }
+
+    .main-landing .over-landing form input:nth-child(2){
+        width: 100px;
+    }
+}
+
+@media (max-width: 465px){
+    .about .about-welcome .image-parent img{
+        height: 370px;
+    }
+    .about .about-welcome .welcome-text h1{
+        font-size: 58px;
+    }
+
+    .main-landing .over-landing form input:nth-child(2){
+        margin-top: 20px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-landing .over-landing h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 340px){
+    .about .about-welcome .image-parent img{
+        height: 300px
+    }
+
+    .main-landing .over-landing form input:nth-child(1){
+        width: 280px;
+    }
+
+    .main-landing .over-landing h1 {
+        font-size: 65px;
+    }
+
+}
+
+.about .about-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 25px;
+}
+
+.about .about-cards .card{
+    background-color: white;
+}
+
+.about .about-cards .card img{
+    width: 100%;
+    height: 400px;
+}
+
+.about .about-cards .card p{
+    padding: 10px 20px;
+    font-weight: 300;
+}
+
+@media (max-width: 546px){
+    .about .about-cards{
+        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    }
+    .about .about-cards .card img{
+        height: 350px;
+    }
+}
+
+@media (max-width: 430px){
+    .about .about-cards{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+.educational-landing{
+    background-image: url(../Images/6.jpg);
+    background-size: cover;
+}
+
+
+.educational-landing .container h1{
+    margin-bottom: 40px;
+    position: relative;
+    width: 1000px;
+}
+
+.educational-landing .container h1::after{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 120px;
+    background-color: rgb(227, 194, 155);
+    bottom: -40px;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%);
+}
+
+footer{
+    background-image: url(../Images/7.jpg);
+    background-size: cover;
+}
+
+footer .footer-container h1{
+    font-size: 50px;
+}
+
+footer .footer-container h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-container .social-media i {
+    font-size: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1020px){
+    .educational-landing .container h1{
+        width: auto;
+    }
+}
+
+@media (min-width: 900px){
+    nav .landing-nav .hidden-toggle {
+        display: none;
+}
+}
+
+@media (max-width: 899px){
+    nav .landing-nav .nav-bar,
+    nav .landing-nav .serach-bar{
+        display: none;
+    }
+
+    nav .landing-nav {
+        justify-content: space-around;
+    }
+}
